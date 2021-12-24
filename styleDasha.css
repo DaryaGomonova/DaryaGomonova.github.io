@@ -7,6 +7,82 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+.wrapper{
+    position: relative;
+    font-size: 6em;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+   /* text-align: center;*/
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+
+}
+
+.wrapper .stat{
+    color:black;
+    font-size: 60px;
+    font-weight: 400;
+}
+.wrapper .din{
+    margin-left: 15px;
+    height: 90px;
+    /*line-height: 0px;
+    background: white;*/
+    overflow: hidden;
+}
+.din li{
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 7s steps(10) infinite;
+}
+.din li span{
+    position: relative;
+}
+.din li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   /* background: white;*/
+   /* border-left: 2px solid #b4b4b4;*/
+   /* animation: typing 2.5s steps(10) infinite;*/
+}
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+/*@keyframes typing{
+    100%{
+        left:100%;
+        margin: 0 -35px 0 35px;
+    }
+}*/
+
+@keyframes animate{
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%,92% {
+    color: #0e3742;
+    box-shadow: none;
+  } 
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%,100%{
+      color: #fff;
+      text-shadow: 0 0 10px #b4b4b4,
+      0 0 20px #b4b4b4,
+      0 0 40px #b4b4b4,  
+      0 0 80px #b4b4b4,  
+      0 0 160px #b4b4b4;
+
+  }
+}
 .navbar{
     display:flex;
     align-items: center;
