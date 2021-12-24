@@ -73,11 +73,11 @@ p{
 }
 .btn{
     display: inline-block;
-    background: #ff532b;
+    background: #A81919;
     color: #fff;
     padding: 8px 30px;
     margin: 30px 0 ;
-    border-radius: 30px ;
+    border-radius: 0 ;
     transition: background 0.5s;
 }
 .btn:hover{
