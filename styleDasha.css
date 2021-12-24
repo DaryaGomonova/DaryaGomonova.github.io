@@ -15,7 +15,7 @@ body{
     color: #0e3742;
     text-transform: uppercase;
     width: 100%;
-   /* text-align: center;*/
+    text-align: center;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
     line-height: 0.70em;
     outline: none;
@@ -193,10 +193,10 @@ p{
 }
 .title::after{
     content: '';
-    background: #ff532b;
+    background: #A81919;
     width: 82px;
-    height: 5px;
-    border-radius: 15px;
+    height: 3px;
+    border-radius: 0;
     position: absolute;
     bottom: 0;
     left:50%;
