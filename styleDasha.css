@@ -31,8 +31,6 @@ body{
 .wrapper .din{
     margin-left: 15px;
     height: 90px;
-    /*line-height: 0px;
-    background: white;*/
     overflow: hidden;
 }
 .din li{
@@ -52,21 +50,14 @@ body{
     left: 0;
     height: 100%;
     width: 100%;
-   /* background: white;*/
-   /* border-left: 2px solid #b4b4b4;*/
-   /* animation: typing 2.5s steps(10) infinite;*/
+   
 }
 @keyframes slide{
     100%{
         top: -360px;
     }
 }
-/*@keyframes typing{
-    100%{
-        left:100%;
-        margin: 0 -35px 0 35px;
-    }
-}*/
+
 
 @keyframes animate{
   0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%,92% {
