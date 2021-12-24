@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>SDApple | About us</title>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="pictures/logoSDU.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="reg.html">
+                        <img alt="Account" src="pictures/account.png" width= "30" height="30">
+                    </a></li>
+                    <li><a href="shopping-bag.html">
+                        <img alt="Account" src="pictures/cart.png" width= "30" height="30">
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay">
+
+            </div>
+            <img src="pictures/about13.png" class="mobile">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="pictures/camera.png" width="80" height="70">
+                    <div>
+                        <h1>Great partners</h1>
+                        
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="pictures/processor.png" width="80" height="70">
+                    <div>
+                        <h1>Why SDU?</h1>
+                        
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="pictures/display.png" width="80" height="70">
+                    <div>
+                        <h1>Security</h1>
+                        
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="pictures/battery.png" width="80" height="70">
+                    <div>
+                        <h1>Delivery</h1>
+                        
+                </div>
+                </div> 
+        </div>
+        <div class="controls">
+            <img src="pictures/arrow.png" id="up">
+            <h3>Tap here</h3>
+            <img src="pictures/arrow.png" id="down">
+        </div>
+    </div>
+
+    <!--------footer-->
+
+
+
+
+    <script>
+        var circle = document.getElementById("circle");
+        var up = document.getElementById("up");
+        var down = document.getElementById("down");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        up.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+
+        down.onclick = function(){
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+</body>
+</html>
